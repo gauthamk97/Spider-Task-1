@@ -13,6 +13,10 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     @IBOutlet weak var Picker: UIPickerView!
     @IBOutlet weak var RollNoTextField: UITextField!
     @IBOutlet weak var NameTextField: UITextField!
+    @IBOutlet weak var AppDevCheckbox: CheckBox!
+    @IBOutlet weak var WebDevCheckbox: CheckBox!
+    @IBOutlet weak var TronicsCheckbox: CheckBox!
+    @IBOutlet weak var AlgorithmsCheckbox: CheckBox!
     
     var PickerArray = ["CSE","ECE","EEE","Mechanical","Chemical","Civil","Metallurgy","Production","ICE","Architecture"]
     
@@ -26,7 +30,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         Picker.dataSource = self
         
         //Creating appropriate keyboards
-        NameTextField.keyboardType = UIKeyboardType.Alphabet
+        NameTextField.autocapitalizationType = UITextAutocapitalizationType.Words
         NameTextField.returnKeyType = UIReturnKeyType.Next
         RollNoTextField.keyboardType = UIKeyboardType.NumberPad
     
@@ -52,6 +56,12 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         //Erasing TextFields
         NameTextField.text = ""
         RollNoTextField.text = ""
+        
+        //Erasing Checkboxes
+        AppDevCheckbox.setImage(UIImage(named: "unchecked_checkbox"), forState: UIControlState.Normal)
+        WebDevCheckbox.setImage(UIImage(named: "unchecked_checkbox"), forState: UIControlState.Normal)
+        TronicsCheckbox.setImage(UIImage(named: "unchecked_checkbox"), forState: UIControlState.Normal)
+        AlgorithmsCheckbox.setImage(UIImage(named: "unchecked_checkbox"), forState: UIControlState.Normal)
         
         // Create a new "Storyboard2" instance.
         let storyboard = UIStoryboard(name: "Secondary", bundle: nil)
@@ -100,6 +110,19 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     {
         self.RollNoTextField.resignFirstResponder()
     }
+    
+    @IBAction func CheckboxClick(sender: CheckBox) {
+        if sender.isChecked == false {
+            sender.setImage(UIImage(named: "checked_checkbox"), forState: UIControlState.Normal)
+            sender.isChecked = true
+        }
+        else {
+            sender.setImage(UIImage(named: "unchecked_checkbox"), forState: UIControlState.Normal)
+            sender.isChecked = false
+        }
+        
+    }
+    
 
 }
 

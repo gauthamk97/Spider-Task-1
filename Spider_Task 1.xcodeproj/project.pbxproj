@@ -14,6 +14,7 @@
 		AC5F2FB71D0F3DB700033992 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC5F2FB51D0F3DB700033992 /* LaunchScreen.storyboard */; };
 		AC5F2FC01D0F400900033992 /* Secondary.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC5F2FBF1D0F400900033992 /* Secondary.storyboard */; };
 		ACC255281D10057A006CA437 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC255271D10057A006CA437 /* ViewController2.swift */; };
+		ACC2552B1D1042D4006CA437 /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC2552A1D1042D4006CA437 /* CheckBox.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		AC5F2FB81D0F3DB700033992 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC5F2FBF1D0F400900033992 /* Secondary.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Secondary.storyboard; sourceTree = "<group>"; };
 		ACC255271D10057A006CA437 /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		ACC2552A1D1042D4006CA437 /* CheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				AC5F2FAC1D0F3DB700033992 /* AppDelegate.swift */,
+				ACC2552A1D1042D4006CA437 /* CheckBox.swift */,
 				AC5F2FBE1D0F3F8500033992 /* MainStoryboard */,
 				ACC255291D1005C9006CA437 /* SecondaryStoryboard */,
 				AC5F2FB31D0F3DB700033992 /* Assets.xcassets */,
@@ -159,6 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACC2552B1D1042D4006CA437 /* CheckBox.swift in Sources */,
 				AC5F2FAF1D0F3DB700033992 /* ViewController.swift in Sources */,
 				AC5F2FAD1D0F3DB700033992 /* AppDelegate.swift in Sources */,
 				ACC255281D10057A006CA437 /* ViewController2.swift in Sources */,
